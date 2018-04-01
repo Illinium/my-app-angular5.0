@@ -1,0 +1,26 @@
+<button (click)="alertFunc()"  class="btn btn-primary">add car</button>
+<hr>
+<p>{{addCar}}</p>
+<app-car></app-car>
+<app-car></app-car>
+
+<hr>
+
+<input type="text" class="form-control" (input)="onKeyUp($event)">
+
+<p>{{ inputText }}</p>
+<hr>
+<hr>
+<input type="text" class="form-control" #myInp (input)="onKeyUpSecond(myInp.value)">
+<p>{{ inputTextSecond }}</p>
+<hr>
+<hr>
+<input type="text" class="form-control" (keyup)="onKeyUpThird($event)">
+<p>{{ inputTextThird }}</p>
+<hr>
+<hr>
+<input type="text" class="form-control" (keyup.enter)="onKeyUpFour($event)">
+
+<!--two way binding [()]-->
+<input type="text" class="form-control" #ctrl="ngModel" [(ngModel)]="inputTextFour">
+<p>{{ inputTextFour }}</p>

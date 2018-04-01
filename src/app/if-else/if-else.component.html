@@ -1,0 +1,24 @@
+<input type="text" class="form-control" [(ngModel)]="newCar">
+<button class="btn btn-danger" (click)="changeVisible()">Add Car</button>
+<hr>
+<!--<p *ngIf="!visible">Car not Added</p>
+<p *ngIf="visible">Car Added</p>-->
+
+
+
+<p *ngIf="!visible; else successStatus">Car not Added</p>
+<ng-template #successStatus>
+  <p>Car Added</p>
+</ng-template>
+
+<p *ngFor="let car of cars">{{car}}</p>
+
+<ul>
+  <li *ngFor="let i of items; let idx = index">
+    <H5>{{idx + 1}}</H5><b>{{i.id}}</b> - <i>{{i.name}}</i>
+  </li>
+</ul>
+
+<p *ngFor="let date of dates">{{date | date:'medium'}}  <!--short, medium,-->
+</p>
+
