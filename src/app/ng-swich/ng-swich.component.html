@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10">
+
+      <ul class="list-group">
+        <li *ngFor="let i of items" (click)="onClick(i)" class="list-group-item">
+          {{i}}
+        </li>
+      </ul>
+
+      <div [ngSwitch]="current">
+        <p *ngSwitchCase="1">1</p>
+        <p *ngSwitchCase="2">2</p>
+        <p *ngSwitchCase="3">3</p>
+        <p *ngSwitchCase="4">4</p>
+        <p *ngSwitchDefault>default</p>
+      </div>
+
+
+    </div>
+  </div>
+</div>

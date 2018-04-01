@@ -9,6 +9,7 @@ import { CarComponent } from './car/car.component';
 import { IfElseComponent } from './if-else/if-else.component';
 import { HtmlToComponentComponent } from './html-to-component/html-to-component.component';
 import { ColorChangeDirective } from './directives/color-change.directive';
+import { NgSwichComponent } from './ng-swich/ng-swich.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ColorChangeDirective } from './directives/color-change.directive';
     CarComponent,
     IfElseComponent,
     HtmlToComponentComponent,
-    ColorChangeDirective
+    ColorChangeDirective,
+    NgSwichComponent
   ],
   imports: [
     BrowserModule,
