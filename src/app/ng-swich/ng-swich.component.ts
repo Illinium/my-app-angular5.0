@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {current} from "codelyzer/util/syntaxKind";
 
 @Component({
   selector: 'app-ng-swich',
@@ -12,6 +13,7 @@ export class NgSwichComponent implements OnInit {
 
   onClick(number: number){
     this.current = number;
+    console.log(current)
   }
 
   constructor() { }
